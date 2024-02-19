@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (startGameButton) {
         startGameButton.addEventListener("click", function() {
             // Redirect to the game page
-            window.location.href = "index.html";
+            window.location.href = "game.html";
         });
     }
 });

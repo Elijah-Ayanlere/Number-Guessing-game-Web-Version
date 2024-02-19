@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Unique Number Guessing Game</title>
+</head>
+<body>
+    <div class="container show">
+        <div class="card show">
+            <h1>Unique Number Guessing Game</h1>
+            <div class="subtopic">
+                <p id="message" class="shimmer-text"></p>
+                <h3 id="wildcardMessage" style="display: none;">Welcome to the Wildcard Round! I have chosen a second number between 1 and 100. Can you guess it for bonus points?</h3>
+            </div>
+            <label for="difficulty" class="attempts"><b>Select difficulty:</b></label>
+            <select id="difficulty" onchange="updateDifficulty()" class="input-field">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <label for="guess" class="attempts"><b>Enter your guess:</b></label>
+            <input type="number" id="guess" min="1" max="100" class="input-field">
+            <button onclick="checkGuess()" class="submit-button"><b>Submit Guess</b></button>
+            <p class="attempts"><b>Attempts left: <span id="attempts">10</span></b></p>
+            <div class="display">
+                <button onclick="useHint()" class="action-button"><b>Use Hint Coin</b></button>
+                <button id="playWildcardButton" onclick="playWildcardRound()" class="action-button"><b>Play Wildcard Round</b></button>
+            </div>
+            
+    <audio id="wrongAudio" src="audio/fail.mp3"></audio>
+    <audio id="correctAudio" src="audio/clap.mp3"></audio>
+    <audio id="wildRoundAudio" src="audio/nextlevel.mp3"></audio>
+    <audio id="hintCoinAudio" src="audio/hint.mp3"></audio>
+    <script src="game.js"></script>
+</body>
+</html>
