@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="welcome-style.css">
+    <title>Welcome to the Unique Number Guessing Game</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Important Notice!</h1>
+            <p>
+                <b>Welcome, <span id="playerName"></span>! Thank you for joining the Unique Number Guessing Game. You're about to embark on an exhilarating adventure!</b>
+            </p>
+            <p>
+                <b>In this game, your mission is to guess a number that has been randomly selected within a specific range. Exciting, isn't it? Choose from different difficulty levels, each with its own unique set of rules.</b>
+            </p>
+            <p>
+                <b>Your goal is to make accurate guesses, and if you're feeling daring, you can even take on the Wildcard Round for a chance to earn bonus points. It's an optional challenge that adds an extra layer of excitement to the game.</b>
+            </p>
+            <p>
+                <b>To assist you on your journey, you have a special tool called the Hint Coin. This magical coin can provide you with a hint that might lead you to the correct answer. When you're ready to uncover a clue, simply click the "Use Hint Coin" button in the game.</b>
+            </p>
+            <!-- Add a button to start the game -->
+            <button id="startGameButton" onclick="startGame()" class="submit-button"><b>Start Game</b></button>
+        </div>
+    </div>
+    <script src="game-welcome.js"></script>
+</body>
+</html>
