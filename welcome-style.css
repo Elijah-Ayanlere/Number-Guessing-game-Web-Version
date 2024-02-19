@@ -50,6 +50,10 @@ body {
     }
 }
 
+p{
+    font-size: 15px;
+}
+
 /* Input Styles */
 .input-container {
     margin-bottom: 20px;
