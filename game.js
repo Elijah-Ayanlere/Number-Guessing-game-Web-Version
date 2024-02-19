@@ -16,7 +16,7 @@ function startGame() {
     // Display the welcome message with the user's name
     const playerName = localStorage.getItem('playerName');
     const message = document.getElementById('message');
-    message.innerHTML = `<h3>Welcome, ${playerName}! Try to guess the number.</h3>`;
+    message.innerHTML = `<h3>Welcome, ${playerName}! Try to guess the number between 1 and 100.</h3>`;
 }
 
 // Update difficulty immediately when user changes it
